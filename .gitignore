@@ -170,3 +170,4 @@ cython_debug/
 *.duckdb
 *.wal
 credentials.json
+.DS_Store
