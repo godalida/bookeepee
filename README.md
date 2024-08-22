@@ -1,10 +1,4 @@
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Product Pipelines Tests](https://github.com/TriallyAI/elt-ingest-pipelines/actions/workflows/build-and-deploy-product-pipelines.yaml/badge.svg)](https://github.com/TriallyAI/elt-ingest-pipelines/actions/workflows/build-and-deploy-product-pipelines.yaml)
-
-# elt-ingest-pipelines
-
-This repo contains the code used to ingest data from external sources into our data lake. The project uses [dlt](https://github.com/dlt-hub/dlt) to make the data loading tasks easier.
-
+# MongoDB to BigQuery Pipeline
 ## Setup
 
 ### Prerequisites
