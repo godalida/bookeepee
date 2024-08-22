@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "elt-ingest-pipelines"
+version = "0.1.0"
+description = ""
+authors = ["Glenn Dalida <dalidaglenno6452@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+dlt = {extras = ["bigquery", "cli","mongodb"], version = "^0.5.1"}
+pymongo = ">=4.3.3"
+pymongoarrow = ">=1.3.0"
+requests = "^2.32.3"
+pandas = "^2.2.2"
+numpy = "^2.1.0"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+scikit-learn = "^1.5.1"
+keras = "^3.5.0"
+torch = "^2.4.0"
+fastapi = "^0.112.1"
+uvicorn = "^0.30.6"
+pydantic = "^2.8.2"
+sqlalchemy = "^2.0.32"
+alembic = "^1.13.2"
+pytest = "^8.3.2"
+coverage = "^7.6.1"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+mypy = "^1.11.1"
+isort = "^5.13.2"
+pre-commit = "^3.8.0"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.5"
+nbconvert = "^7.16.4"
+nbformat = "^5.10.4"
+jupyterlab = "^4.2.4"
+jupyterlab-code-formatter = "^3.0.2"
+jupyterlab-git = "^0.50.1"
+jupyterlab-lsp = "^5.1.0"
+jupyterlab-dash = "^0.1.0a3"
+jupyterlab-vega3 = "^3.3.0"
+pyspark = "^3.5.2"
+toml = "^0.10.2"
+logging = "^0.4.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
