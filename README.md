@@ -19,8 +19,8 @@ This repo contains the code used to ingest data from external sources into our d
 1. Clone the repository
 
 ```bash
-git clone https://github.com/TriallyAI/elt-ingest-pipelines.git
-cd elt-ingest-pipelines
+git clone https://github.com/godalida/bookeepee.git
+cd mongodb-pipelines
 ```
 
 2. Install the dependencies
