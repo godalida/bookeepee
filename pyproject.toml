@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "elt-ingest-pipelines"
+name = "mongodb-pipelines"
 version = "0.1.0"
 description = ""
 authors = ["Glenn Dalida <dalidaglenno6452@gmail.com>"]
