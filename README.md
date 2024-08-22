@@ -68,3 +68,6 @@ WHERE
     OR (status = 'terminated' AND end_date IS NOT NULL AND end_date >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 7 DAY));
 ```
 2. Schedule the Query above on Bigquery and enable Data transfers.
+
+### Pipeline Diagram
+![Pipeline Diagram](pipeline-diagram.png)

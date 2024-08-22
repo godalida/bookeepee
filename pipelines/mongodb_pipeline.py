@@ -375,7 +375,7 @@ def load_collection_with_arrow(pipeline: Pipeline = None) -> LoadInfo:
     return info
 
 
-def parse_billing_period_in_pipeline():
+def parse_billing_period_pipeline():
     """Parse billingPeriod attribute in Subscription Payments table from BigQuery."""
     project_id = os.getenv('PROJECT_ID')  # Update to use environment variable
     dataset = os.getenv('DATASET')  # Update to use environment variable
@@ -403,21 +403,21 @@ def parse_billing_period_in_pipeline():
 
 if __name__ == "__main__":
     # Load all tables from the database.
-    #print(load_select_collection_user())
-    #logging.info("Successfully ingested User table from MongoDB to BigQuery!")
-    #print(load_select_collection_company())
-    #logging.info("Successfully ingested Company table from MongoDB to BigQuery!")
-    #print(load_select_collection_invoice())
-    #logging.info("Successfully ingested Invoice table from MongoDB to BigQuery!")
+    print(load_select_collection_user())
+    logging.info("Successfully ingested User table from MongoDB to BigQuery!")
+    print(load_select_collection_company())
+    logging.info("Successfully ingested Company table from MongoDB to BigQuery!")
+    print(load_select_collection_invoice())
+    logging.info("Successfully ingested Invoice table from MongoDB to BigQuery!")
     print(load_select_collection_subscription())
     logging.info("Successfully ingested Subscription table from MongoDB to BigQuery!")
-    #print(load_select_collection_subscription_payments())
-    #logging.info("Successfully ingested Subscription Payments table from MongoDB to BigQuery!")
-    #logging.info("Successfully ingested Collections from MongoDB to BigQuery!")
-    ##print(load_entire_database())
-    ##logging.info("Successfully ingested data from MongoDB to BigQuery!")
-    ## Parse billingPeriod from Subscription Payments and write to BigQuery
-    #parse_billing_period_in_pipeline()
+    print(load_select_collection_subscription_payments())
+    logging.info("Successfully ingested Subscription Payments table from MongoDB to BigQuery!")
+    logging.info("Successfully ingested Collections from MongoDB to BigQuery!")
+    parse_billing_period_pipeline()
 
+    #print(load_entire_database())
+    #logging.info("Successfully ingested data from MongoDB to BigQuery!")
+    # Parse billingPeriod from Subscription Payments and write to BigQuery
     # Load data with Apache Arrow.
     # print(load_collection_with_arrow())
