@@ -28,3 +28,10 @@ poetry install
 ```bash
 poetry shell
 ```
+
+4. Running the pipeline
+
+```bash
+cd pipelines
+python mongodb_pipeline.py
+```
