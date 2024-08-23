@@ -55,6 +55,8 @@ python mongodb_pipeline.py
 ```sql
 SELECT
     CURRENT_DATE() AS partition_date,  -- Added partition date
+    DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY) AS eval_start_date,  
+    CURRENT_DATE() AS eval_end_date, 
     COUNTIF(
         status = 'active' 
         AND start_date >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 7 DAY)
